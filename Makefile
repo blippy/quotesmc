@@ -1,6 +1,9 @@
 .PHONY : all
 
-all : jokes.dat quotes.dat
+all : finance.dat jokes.dat quotes.dat
+
+finance.dat : finance
+	strfile finance
 
 jokes.dat : jokes
 	strfile jokes
